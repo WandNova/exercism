@@ -8,6 +8,7 @@ def equilateral(sides):
         return True
     return False
 
+
 def isosceles(sides):
     a = sides[0]
     b = sides[1]
@@ -19,6 +20,7 @@ def isosceles(sides):
     if a == b or a == c or b == c:
         return True
     return False
+
 
 def scalene(sides):
     a = sides[0]
