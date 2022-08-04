@@ -2,21 +2,11 @@ def convert(number):
     pling = "Pling"
     plang = "Plang"
     plong = "Plong"
-    if number < 3:
-        return str(number)
-    elif (number % 3 == 0 and number % 5 == 0 and number % 7 == 0):
-        return (pling+plang+plong)
-    elif (number % 3 == 0 and number % 5 == 0):
-        return (pling+plang)
-    elif (number % 3 == 0 and number % 7 == 0):
-        return (pling+plong)
-    elif number % 3 == 0:
-        return pling
-    elif (number % 5 == 0 and number % 7 == 0):
-        return (plang+plong)
-    elif number % 5 == 0:
-        return plang
-    elif number % 7 == 0:
-        return plong
-    else:
-        return str(number)
+    result = ""
+    if number % 3 == 0:
+        result += pling
+    if number % 5 == 0:
+        result += plang
+    if number % 7 == 0:
+        result += plong
+    return result or str(number)

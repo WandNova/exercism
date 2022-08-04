@@ -1,16 +1,10 @@
-def square_of_sum(number, result=0, sum=0):
-    for i in range(number,0,-1):
-        sum += i
-        if i == 1:
-            result = (sum**2)
-            return (result)
+def square_of_sum(number):
+    return sum([i for i in range(number, 0, -1)])**2
 
-def sum_of_squares(number, result=0, sum=0):
-    for i in range(number,0,-1):
-        sum += i**2
-        if i == 1:
-            return (sum)
+
+def sum_of_squares(number):
+    return sum([i**2 for i in range(number, 0, -1)])
+
 
 def difference_of_squares(number):
-    return square_of_sum(number, result=0, sum=0)-sum_of_squares(number, result=0, sum=0)
-    
+    return square_of_sum(number) - sum_of_squares(number)
