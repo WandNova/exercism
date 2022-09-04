@@ -1,5 +1,3 @@
-import sys
-
 # Score categories.
 # Change the values as you see fit.
 YACHT = 0
